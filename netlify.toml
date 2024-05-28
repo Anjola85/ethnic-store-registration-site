@@ -1,0 +1,13 @@
+[build]
+  command = "yarn build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+
+[[redirects]]
+from = "https://quiikmart.com/*"
+to = "https://www.quiikmart.com/:splat"
+status = 301
+force = true

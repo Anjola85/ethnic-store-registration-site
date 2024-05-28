@@ -1,0 +1,168 @@
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffef0;
+  color: #000;
+  width: 100%;
+}
+
+.faqSection .faqContainer .title {
+  padding: 1.32em 1.2em 0.1em;
+}
+
+.faqContainer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faqContainer .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.2%; /* 29.568px */
+  letter-spacing: -1.56px;
+}
+
+.accordionContainer {
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.accordionItem {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.accordionItem::before {
+  position: absolute;
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  background-color: #0000004d;
+  bottom: -8px;
+}
+
+.accordionItem + .accordionItem {
+  margin-top: 1rem;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+/* TODO: here */
+.accordionHeader {
+  font-family: Avenir Next;
+  font-weight: 600;
+  font-size: 1.6rem;
+  width: 85%;
+  text-align: left;
+  line-height: 150%;
+}
+
+.accordionHeader svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.accordionContent {
+  color: #000;
+  font-family: Avenir Next;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: -0.053rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+/* LARGE TABLET */
+@media only screen and (min-width: 1024px) {
+  .faqContainer {
+    display: grid;
+    align-items: start;
+    gap: 0.2em;
+    grid-template-columns: 48% 59%;
+    width: 100%;
+    padding: 5em;
+    padding-top: 0;
+  }
+
+  .faqSection .faqContainer .title {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    font-size: 3rem;
+    margin-left: 1.3em;
+  }
+
+  .faqContainer h2 {
+    padding: 0;
+  }
+
+  .accordionContainer {
+    margin-top: 5.8em;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .faqContainer .title {
+    font-size: 3.5rem;
+    line-height: 150%;
+  }
+
+  .accordionHeader {
+    font-size: 2rem;
+  }
+
+  .accordionHeader svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .accordionContent {
+    font-size: 2rem;
+  }
+  .accordionItem {
+    margin-bottom: 5em;
+  }
+
+  .accordionItem::before {
+    bottom: -15px;
+  }
+
+  .faqContainer {
+    padding-top: 16.5em;
+    grid-template-columns: 47% 53%;
+  }
+
+  .faqSection .faqContainer .title {
+    padding: 0;
+    font-size: 3.8rem;
+    width: 57%;
+    margin-left: 2.5em;
+  }
+
+  .accordionContainer {
+    margin-top: 8.3em;
+  }
+}

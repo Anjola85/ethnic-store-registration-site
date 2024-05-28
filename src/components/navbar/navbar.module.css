@@ -1,0 +1,266 @@
+.navbar {
+  background-color: transparent;
+  height: 3em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em 2em;
+  z-index: 3;
+}
+
+.nav_logo {
+  width: 47px;
+  height: 28px;
+}
+
+.close_menu,
+.hamburger_menu {
+  width: 80px;
+  height: 40px;
+  fill: #fff;
+  color: #fff;
+  z-index: 2;
+}
+
+.close_menu {
+  position: absolute;
+  fill: #004449;
+  color: #004449;
+  z-index: 5;
+  top: 4%;
+  left: 8%;
+}
+
+.navbar button {
+  background-color: #fff;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #004449;
+  font-family: "Avenir Next";
+  outline: none;
+  padding: 0.6em 1em;
+  border-radius: 2em;
+}
+
+.navbar button:hover {
+  background-color: #004449f0;
+  color: #fff;
+}
+
+.fullPageMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fffef0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  transition: right 0.3s ease;
+  padding: 3rem;
+}
+
+.fullPageMenu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5em;
+  position: relative;
+}
+
+.nav_logo_closed {
+  position: absolute;
+  top: 4%;
+  right: 8%;
+  width: 5.6em;
+  height: 3.4em;
+}
+
+.nav_logo_closed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fullPageMenu nav .nav_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  text-decoration: none;
+  margin: 0.5em 0;
+  color: #204b38;
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.88px;
+  width: 100%;
+  position: relative;
+}
+
+.fullPageMenu nav .nav_link:hover {
+  color: #7ab92d;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+}
+
+.fullPageMenu nav .nav_link::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #d9d9d9;
+  transition: width 0.3s ease;
+  bottom: 0;
+}
+
+.fullPageMenu nav svg {
+  height: 20px;
+  width: 20px;
+}
+
+.fullPageMenu button {
+  border-radius: 3em;
+  background: #004449;
+  color: #fff;
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 1em 1.2em;
+  width: 100%;
+  align-self: center;
+  margin-top: 5em;
+}
+/* IPAD */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 5rem;
+  }
+
+  .nav_logo {
+    width: 60px;
+    height: 35.7px;
+  }
+
+  .hamburger_menu {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/** LARGE TABLET */
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    padding: 3em;
+    background-color: #fff;
+    border-radius: 5rem;
+    top: 4%;
+    width: 70%;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+  }
+
+  .navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: -10%;
+  }
+
+  .navbar nav a {
+    color: #000;
+    text-align: center;
+    font-family: Avenir Next;
+    font-size: 1.35em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none;
+  }
+
+  .navbar nav a:hover {
+    color: #7ab92d;
+    text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav_logo_desktop {
+    width: 56px;
+    height: 34px;
+    display: inline-block;
+  }
+
+  .nav_logo_desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nav_logo {
+    width: 75px;
+    height: 44.65px;
+  }
+
+  .hamburger_menu {
+    width: 55px;
+    height: 55px;
+  }
+
+  .navbar button {
+    background-color: #004449;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.8em 1.5em;
+  }
+
+  .nav_logo_closed {
+    width: 8em;
+    height: 4.83em;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    /* aspect ratio is 1.65*/
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .navbar {
+    padding: 4em 5em;
+  }
+
+  .nav_logo_desktop {
+    width: 59.2px;
+    height: 36px;
+  }
+
+  .navbar nav a {
+    font-size: 1.7rem;
+  }
+
+  .navbar nav a:hover {
+    color: #7ab92d;
+    text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .navbar nav {
+    margin-left: -20%;
+  }
+
+  .navbar button {
+    font-size: 1.4rem;
+  }
+}

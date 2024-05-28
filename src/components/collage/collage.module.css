@@ -1,0 +1,165 @@
+.collage {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 5em;
+  padding: 0 2em;
+}
+
+.collage_image1 {
+  width: 17em;
+  height: 10em;
+}
+
+.collage_image2 {
+  margin-top: -2em;
+  margin-left: 1em;
+  width: 11em;
+  height: 8em;
+}
+
+.collage_image3 {
+  width: 14em;
+  height: 9em;
+  margin-left: 1.5em;
+}
+
+.collage_image4 {
+  width: 8em;
+  height: 12em;
+  margin-top: -2.5em;
+  margin-left: 1em;
+}
+
+.collage_image1 img,
+.collage_image2 img,
+.collage_image3 img,
+.collage_image4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.7em;
+}
+
+/* LARGE MOBILE */
+@media only screen and (min-width: 425px) {
+  .collage {
+    padding: 0 0.1em;
+  }
+
+  .collage_image1 {
+    width: 19em;
+    height: 11em;
+  }
+  
+  .collage_image2 {
+    width: 14em;
+    height: 8em;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .collage_image3 {
+    width: 15em;
+    height: 10em;
+    margin-left: 2em;
+  }
+  
+  .collage_image4 {
+    width: 9em;
+    height: 13em;
+    margin-top: -2em;
+    margin-left: 0;
+  }
+}
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+  .collage {
+    width: 100%;
+  }
+
+  .collage_image1 {
+    width: 31.5em;
+    height: 19em;
+    margin-left: 3em;
+  }
+
+  .collage_image2 {
+    width: 24em;
+    height: 15em;
+  }
+
+  .collage_image3 {
+    width: 26em;
+    height: 19em;
+    margin-left: 7em;
+  }
+
+  .collage_image4 {
+    width: 16em;
+    height: 25em;
+    margin-top: -2em;
+  }
+}
+
+/** LARGE TABLET */
+@media only screen and (min-width: 1024px) {
+  .collage_image1 {
+    width: 40em;
+    height: 25em;
+    margin-left: 5em;
+  }
+
+  .collage_image2 {
+    width: 28em;
+    height: 17em;
+  }
+
+  .collage_image3 {
+    width: 30em;
+    height: 22em;
+    margin-left: 8em;
+  }
+
+  .collage_image4 {
+    width: 18em;
+    height: 28em;
+    margin-top: -4em;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .collage {
+    align-items: flex-start;
+    padding: 0 5em;
+    margin-bottom: 10em;
+  }
+
+  .collage_image1 {
+    width: 51.7em;
+    height: 32.6em;
+    margin-left: 15em;
+  }
+
+  .collage_image2 {
+    width: 37.5em;
+    height: 23.5em;
+    margin-left: 5em;
+  }
+
+  .collage_image3 {
+    width: 40em;
+    height: 29em;
+    margin-left: 20em;
+  }
+
+  .collage_image4 {
+    width: 25em;
+    height: 40em;
+    margin-top: -8.5em;
+    margin-left: 5em;
+  }
+}

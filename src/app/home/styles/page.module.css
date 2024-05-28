@@ -1,0 +1,1130 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* small phones*/
+@media only screen and (max-width: 374px) {
+  .hero_section::before {
+    background-size: 246% !important;
+  }
+}
+
+.home_page {
+  min-height: 60vh;
+}
+
+.home_page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero_section {
+  background-color: #fff;
+  width: 100%;
+  min-height: 57vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+}
+
+.hero_section_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 3rem;
+  margin-top: 10em;
+}
+
+.hero_section_container h1 {
+  text-align: center;
+  max-width: 90%;
+  color: #004449;
+  text-align: left;
+  font-family: "Overpass", sans-serif;
+  font-size: 3.5em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: -1.65px;
+  z-index: 2;
+  margin-bottom: 1em;
+  align-self: flex-start;
+}
+
+.hero_section_container p {
+  /* color: #92939c; */
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+  margin-bottom: 1.5em;
+}
+
+.hero_section_container img {
+  width: 100%;
+  filter: brightness(75%);
+  object-fit: cover;
+  aspect-ratio: 0.695;
+  border-radius: 1.6em;
+}
+
+.platform_section {
+  background-color: #fff;
+}
+
+.platform_section,
+.platform_section_container {
+  width: 100%;
+}
+
+.platform_section_container {
+  padding: 3em;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.text_content h1 {
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -1.5px;
+  margin-bottom: 0.5em;
+}
+
+.text_content p {
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.54px;
+  margin-bottom: 1.5em;
+}
+
+.text_content button {
+  font-size: 1.4em;
+  padding: 0.5em 1.8em;
+  background: #d5f457;
+  border-radius: 2em;
+  color: #000;
+  font-family: Avenir Next;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  margin-bottom: 1.5em;
+}
+
+.text_content button:hover {
+  background-color: #004449;
+  color: #fff;
+}
+
+.platform_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.081;
+  border-radius: 1.6em;
+}
+
+.create_impact_section {
+  background: #004449;
+  width: 100%;
+}
+
+.create_impact_section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.create_impact_section_container h2 {
+  color: #fff;
+  font-family: Avenir Next;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1.35px;
+  width: 55%;
+  align-self: flex-start;
+  margin-bottom: 1em;
+}
+
+.create_impact_section_container .create_impact_cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  gap: 2em;
+}
+
+.create_impact_section_container .create_impact_cards::-webkit-scrollbar {
+  display: none;
+}
+
+.create_impact_card {
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 1em;
+  padding: 2em 1.2em;
+  min-width: 100%;
+  aspect-ratio: 0.76;
+  max-width: 405px;
+  min-height: 100%;
+  min-width: 75%;
+}
+
+.create_impact_card h3 {
+  align-self: flex-start;
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 2.1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.96px;
+  width: 70%;
+  margin-bottom: 1em;
+}
+
+.create_impact_card button {
+  align-self: flex-start;
+  border-radius: 1.66em;
+  background: #004449;
+  padding: 0.5em 1.8em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fffef0;
+  font-family: Avenir Next;
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.2%;
+  transition: all 0.3s ease-in-out;
+}
+
+.create_impact_card button:hover {
+  background-color: #fffef0;
+  color: #004449;
+}
+
+.card_image {
+  align-self: flex-end;
+  width: 90%;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.apptour_section {
+  background-color: #fff;
+  width: 100%;
+}
+
+.apptour_section_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 1.5em 3em 1.5em;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.take_app_tour {
+  color: #7ab92d;
+  font-family: "Caveat", cursive;
+  font-size: 2.6em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100.7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.take_app_tour_heading {
+  display: none;
+}
+
+.tours_content {
+  border-radius: 3em;
+  background: #f8f8f8;
+  padding: 5em 1em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 35% 7% 58%;
+  gap: 0.5em;
+}
+
+.tour_images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  /* margin-top: -40em; */
+}
+
+.tour_images .tour_image {
+  width: 10em;
+  height: 22em;
+  border-radius: 1em;
+}
+
+.tour_images .tour_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+.tours_content .arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.tours_content .arrows::before {
+  content: "";
+  width: 0.4em;
+  height: 100%;
+  background-color: #f2f2f4;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tours_content .arrows svg {
+  font-size: 2.3em;
+  fill: #92939c;
+  z-index: 2;
+}
+
+.tours_text_content_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  margin-left: 0.5em;
+}
+
+.tours_text_content_card h3 {
+  color: #282d38;
+  font-family: Avenir Next;
+  font-size: 2.1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111%;
+  letter-spacing: -0.8px;
+  width: 90%;
+  margin-bottom: 0.7em;
+}
+
+.tours_text_content_card h3 span {
+  color: #7ab92d;
+}
+
+.tours_text_content_card p {
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: -0.48px;
+  margin-bottom: 4em;
+}
+
+.popularstore_section {
+  width: 100%;
+  background-color: #fff;
+}
+
+.popularstore_section_container {
+  padding: 3rem;
+  padding-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+
+.popularstore_section_container h2 {
+  color: #282e38;
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 1.1em;
+}
+
+.slider_wrapper {
+  display: grid;
+  gap: 3em;
+  transition: transform 0.5s ease;
+  width: 100%;
+  /* position: relative; */
+}
+
+.slider_wrapper .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popularstore_section_container .slider {
+  position: relative;
+  width: 100%;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+
+.popularstore_section_container .slider_image {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  border-radius: 0.8em;
+}
+
+.popularstore_section_container .slider_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8em;
+  aspect-ratio: 1.35172413793;
+}
+
+.left_arrow,
+.right_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  fill: #fff;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  height: 3.4em;
+  width: 3.4em;
+}
+
+.left_arrow {
+  left: -2em;
+}
+
+.right_arrow {
+  right: -2em;
+}
+
+.store_info {
+  border-radius: 2.6em;
+  background: #fffef0;
+  display: flex;
+  align-items: center;
+  width: 65%;
+  padding: 0.8em 1.4em;
+  margin-top: -2.5rem;
+}
+
+.store_info .store_logo_image {
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 50%;
+}
+
+.store_info .store_logo_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.store_info_text {
+  margin-left: 0.8em;
+}
+
+.store_info_text h3 {
+  color: #000;
+  font-family: Avenir Next;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+  letter-spacing: -0.84px;
+  margin-bottom: 0.1em;
+}
+
+.store_info_text h3 .stars {
+  margin-top: -0.1em;
+}
+.store_info_text h3 .stars svg {
+  font-size: 0.5em;
+  fill: #fb9d6e;
+}
+
+.store_info_text p {
+  color: #601124;
+  font-family: Avenir Next;
+  font-size: 0.7em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.2%;
+  letter-spacing: -0.372px;
+}
+
+.mission_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission_heading {
+  color: #004449;
+  text-align: left;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  font-family: Avenir Next;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -1.875px;
+  margin-bottom: 1em;
+}
+
+.mission_section p {
+  color: #004449;
+  font-family: Avenir Next;
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: -0.54px;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.mission_section p u {
+  color: #004449;
+}
+
+.mission_section a {
+  color: var(--Secondary-Color, #601124);
+  text-align: center;
+  font-family: Avenir Next;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.mission_section_image {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.mission_section_image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.06216216216;
+  object-fit: cover;
+  border-radius: 0.6em;
+}
+
+.popularstore_section_container .slider_image {
+  box-shadow: 0px 21px 26px rgb(0 0 0 / 45%);
+}
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+  .hero_section::before {
+    background: url(/images/hero_desktop.png) lightgray 50% / cover no-repeat;
+    background-size: 100%;
+    background-position: center 60%;
+    filter: brightness(52%);
+    min-height: 100vh;
+  }
+
+  .hero_section {
+    min-height: 100vh;
+  }
+
+  /* .hero_section_container {
+    min-height: 100vh;
+  } */
+
+  .hero_section_container button {
+    padding: 0.5em 1.8em;
+    background-color: #d7ffc2;
+    color: #000;
+    text-shadow: unset;
+  }
+
+  .create_impact_card {
+    min-width: 330px;
+  }
+
+  .take_app_tour {
+    font-size: 4rem;
+    margin-bottom: 1.5em;
+  }
+
+  .tours_content {
+    grid-template-columns: 45% 15% 40%;
+    padding: 5em 2em !important;
+  }
+
+  .tours_content .tour_images {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .tour_images .tour_image {
+    width: 17em;
+    height: 23.5em;
+  }
+
+  .tours_content .arrows {
+    margin-left: 5em;
+  }
+
+  .tours_text_content_card h3 {
+    font-size: 2.4rem;
+  }
+
+  .tours_text_content_card p {
+    font-size: 1.6rem;
+  }
+
+  .popularstore_section_container {
+    padding-bottom: 5em;
+  }
+  .popularstore_section_container h2 {
+    font-size: 2.8em;
+  }
+
+  .popularstore_section_container .slider {
+    margin-bottom: 10em;
+  }
+
+  .popularstore_section_container .slider_image {
+    max-width: 500px;
+  }
+  .store_info {
+    width: 50%;
+  }
+
+  .store_info .store_logo_image {
+    width: 4em;
+    height: 4em;
+  }
+
+  .store_info_text h3 {
+    font-size: 1.5em;
+  }
+
+  .store_info_text p {
+    font-size: 1rem;
+  }
+
+  .mission_heading {
+    width: 90%;
+  }
+
+  .mission_section p {
+    font-size: 1.6rem;
+  }
+
+  .mission_section a {
+    font-size: 1.6rem;
+  }
+
+  .left_arrow {
+    left: 4em;
+  }
+
+  .right_arrow {
+    right: 4em;
+  }
+}
+
+/** LARGE TABLET */
+@media only screen and (min-width: 1024px) {
+  .left_arrow {
+    left: 14em;
+  }
+
+  .right_arrow {
+    right: 13.6em;
+  }
+
+  .hero_section_container {
+    padding: 5em 7.5em;
+    margin-top: 15em;
+  }
+
+  .hero_section_container h1 {
+    font-size: 4.8rem;
+    width: 65%;
+    color: #282e38;
+    position: relative;
+  }
+
+  .hero_section_container h1::before {
+    content: url(/svgs/home_arrow.svg);
+    position: absolute;
+    right: -80%;
+    bottom: -80%;
+  }
+
+  .hero_section_container p {
+    font-size: 2.5em;
+  }
+
+  .hero_section_container button {
+    font-size: 1.4rem;
+    align-self: flex-start;
+    z-index: 3;
+    border-radius: 1.66em;
+    background: #004449;
+    padding: 0.5em 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.2%;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2.5em;
+  }
+
+  .hero_section_container button:hover {
+    background-color: #fff;
+    color: #004449;
+  }
+
+  .hero_section_container img {
+    height: 100%;
+    filter: brightness(100%);
+    aspect-ratio: 1.96;
+    border-radius: 0.8em;
+    max-width: 85%;
+  }
+
+  .ecosystem_image {
+    height: 40em;
+  }
+
+  .platform_section_container {
+    padding: 5em;
+    margin: 0 auto;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  .text_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -10%;
+    width: 75%;
+  }
+
+  .text_content h1 {
+    font-size: 4.5rem;
+    color: #004449;
+    font-family: Avenir Next;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -1.5px;
+    margin-bottom: 0.5em;
+  }
+
+  .text_content p {
+    color: #004449;
+    font-family: Avenir Next;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.66px;
+    margin-bottom: 1.5em;
+  }
+
+  .text_content button {
+    font-size: 1.4em;
+    padding: 0.5em 1.8em;
+    background: #d5f457;
+    border-radius: 2em;
+    color: #000;
+    font-family: Avenir Next;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    margin-bottom: unset;
+  }
+
+  .text_content button:hover {
+    background-color: #004449;
+    color: #fff;
+  }
+
+  .platform_image {
+    width: 100%;
+    height: 100%;
+    max-width: 520px;
+  }
+
+  .platform_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+
+  .create_impact_cards {
+    justify-content: center;
+  }
+
+  .create_impact_card {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .apptour_section_container {
+    margin-bottom: 6em;
+    padding: 3em;
+  }
+
+  .tours_content {
+    grid-template-columns: 34% 13% 50%;
+  }
+
+  .tours_content .tour_images {
+    margin-top: -20em;
+  }
+
+  .tours_text_content_card h3 {
+    font-size: 2.4em;
+    margin-bottom: 1em;
+  }
+
+  .tours_text_content_card p {
+    font-size: 1.5em;
+    line-height: 180%;
+  }
+
+  .store_info {
+    width: 34%;
+  }
+
+  .store_info h3 {
+    line-height: 1.3em;
+  }
+
+  .popularstore_section_container {
+    padding: 5em;
+  }
+
+  .mission_section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2em;
+  }
+
+  .mission_text_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .mission_section_image {
+    display: inline-block;
+    order: 1;
+  }
+
+  .mission_heading {
+    font-size: 3.2em;
+    width: 60%;
+  }
+
+  .mission_text_content p {
+    font-size: 1.5rem;
+  }
+
+  .mission_text_content a {
+    font-size: 1.5rem;
+  }
+
+  .ecosystem_image {
+    margin-bottom: 5em;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .hero_section_container {
+    padding: 7.5em 10em;
+  }
+  .hero_section_container h1 {
+    font-size: 4.8rem;
+    width: 55%;
+    margin-bottom: 1em;
+  }
+
+  .hero_section_container p {
+    font-size: 2.4rem;
+    max-width: 65%;
+    margin-bottom: 2em;
+    position: relative;
+    align-self: flex-start;
+  }
+
+  .hero_section_container button {
+    font-size: 2.1rem;
+    z-index: 3;
+  }
+
+  .hero_section_container button:hover {
+    background-color: #004449a4;
+    color: #fff;
+  }
+
+  .create_impact_section_container {
+    padding: 7.5em 5em;
+  }
+
+  .create_impact_section_container h2 {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+    width: 20%;
+  }
+
+  .text_content {
+    width: 100%;
+  }
+
+  .text_content h1 {
+    font-size: 5rem;
+  }
+
+  .text_content p {
+    font-size: 2.1rem;
+  }
+
+  .text_content button {
+    font-size: 1.8rem;
+  }
+
+  .platform_section_container .ecosystem p {
+    font-size: 2.4em !important;
+  }
+
+  .apptour_section_container {
+    margin-bottom: 10em;
+    padding: 5em;
+  }
+
+  .take_app_tour {
+    font-size: 4.5rem;
+    margin-bottom: 1.5em;
+  }
+
+  .tour_images .tour_image {
+    width: 31em;
+    height: 40em;
+  }
+
+  .tours_content .arrows::before {
+    width: 0.6em;
+  }
+
+  .tours_content .arrows svg {
+    font-size: 4em;
+  }
+
+  .tours_text_content_card h3 {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+  }
+
+  .tours_text_content_card p {
+    font-size: 2.25em;
+    line-height: 180%;
+  }
+
+  .tours_content {
+    grid-template-columns: 50% 10% 40%;
+    padding: 5em !important;
+  }
+
+  .tours_content .tour_images {
+    display: grid;
+    margin-top: -40em;
+    grid-template-columns: 50% 50%;
+    row-gap: 5em;
+  }
+
+  .popularstore_section_container h2 {
+    font-size: 4em;
+  }
+
+  .popularstore_section_container .slider {
+    margin-bottom: 15em;
+  }
+
+  .popularstore_section_container .slider_image {
+    max-width: 750px;
+  }
+
+  .popularstore_section_container .slider .slider_image img {
+    width: 86%;
+    border-radius: 1.6em;
+  }
+
+  .slider .left_arrow,
+  .slider .right_arrow {
+    width: 5.5em;
+    height: 5.5em;
+  }
+
+  .store_info {
+    width: 37%;
+    padding: 1em;
+    border-radius: 6.5em;
+    bottom: -5.5em;
+  }
+
+  .store_info .store_logo_image {
+    width: 6em;
+    height: 6em;
+  }
+
+  .store_info_text {
+    width: 70%;
+    margin-left: 1.5em;
+  }
+
+  .store_info_text h3 {
+    font-size: 2.6em;
+    line-height: 1.3em;
+  }
+
+  .store_info_text p {
+    font-size: 1.8em;
+  }
+
+  .popularstore_section_container {
+    padding-bottom: 10em;
+  }
+
+  .popularstore_section_container .mission_heading {
+    font-size: 3.5em;
+    line-height: 150%;
+    max-width: 60%;
+  }
+
+  .popularstore_section_container .mission_section p {
+    font-size: 2.4em;
+    line-height: 180%;
+    width: 90%;
+  }
+
+  .popularstore_section_container .mission_section a {
+    font-size: 1.4em;
+  }
+
+  .slide .store_info {
+    transform: translate(-2%, -22%);
+  }
+
+  .left_arrow {
+    left: 18em;
+  }
+
+  .right_arrow {
+    right: 18em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .slider_wrapper {
+    width: 2000px;
+  }
+
+  .store_info {
+    width: 25%;
+  }
+
+  .left_arrow {
+    left: 18em;
+  }
+
+  .right_arrow {
+    right: 18em;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero_section {
+    min-height: 57vh;
+  }
+}

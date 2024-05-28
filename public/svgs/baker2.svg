@@ -1,0 +1,10 @@
+  <svg width="291" height="497" viewBox="0 0 291 497" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect width="291" height="497" rx="10" fill="white"/>
+    <rect width="291" height="497" rx="10" fill="url(#pattern0)"/>
+    <defs>
+      <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_2516_7383" transform="matrix(0.00215644 0 0 0.00126263 -0.780928 0)"/>
+      </pattern>
+      <image id="image0_2516_7383" width="1188" height="792" xlink="/svgs/baker2.jpg"/>
+    </defs>
+  </svg>

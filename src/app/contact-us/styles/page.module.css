@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap");
+
+.contactus_page {
+  min-height: 100vh;
+  background: #fffef0;
+}
+
+.contactus_page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3em;
+  padding-top: 10em;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image_logo {
+  width: 5.6em;
+  height: 3.4em;
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  /* aspect ratio is 1.65*/
+}
+
+.image_logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  color: #263238;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 1.5em;
+}
+
+.cover_us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cover_us h2 {
+  color: #601124;
+  font-family: Avenir Next;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 0.5em;
+}
+
+.cover_us p {
+  color: #263238;
+  font-family: Avenir Next;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 4em;
+}
+
+.aspects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.aspects::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 1px;
+  background: #a6a6a6;
+  top: -10%;
+}
+
+.aspects h2 {
+  color: #000;
+  font-family: Avenir Next;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 2em;
+}
+
+.aspect {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 2.5em;
+}
+
+.persona {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.image_container {
+  min-width: 20px;
+  height: 25px;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.persona h3 {
+  margin-left: 7px;
+  color: #000;
+  font-family: Avenir Next;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.aspect p {
+  text-align: left;
+  text-wrap: wrap;
+  color: #263238;
+  font-family: Avenir Next;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.06px;
+}
+
+.aspects button {
+  background: #004449;
+  border-radius: 1.6em;
+  color: #fff;
+  font-family: Avenir Next;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.6em 1em;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin: 2em 0 4em;
+}
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+  .contactus_page .container {
+    padding: 5em;
+    padding-top: 10em;
+  }
+}
+
+/* LARGE TABLET */
+@media only screen and (min-width: 1024px) {
+  .contactus_page .container {
+    padding: 12em;
+  }
+
+  .header {
+    font-size: 2.8rem;
+  }
+
+  .cover_us h2 {
+    font-size: 2rem;
+  }
+
+  .cover_us p {
+    font-size: 1.8rem;
+    margin-bottom: 6em;
+  }
+
+  .aspects::before {
+    width: 100%;
+    top: -15%;
+  }
+
+  .aspects h2 {
+    font-size: 2rem;
+  }
+
+  .image_container {
+    min-width: 40px;
+    height: 50px;
+  }
+
+  .persona h3 {
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+
+  .aspect p {
+    font-size: 1.6rem;
+  }
+
+  .aspects button {
+    font-size: 1.6rem;
+  }
+
+  .image_logo {
+    width: 8em;
+    height: 4.83em;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    /* aspect ratio is 1.65*/
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .contactus_page .container {
+    padding: 15em;
+    padding-bottom: 10em;
+    padding-top: 20em;
+  }
+
+  .header {
+    font-size: 4rem;
+  }
+
+  .cover_us h2 {
+    font-size: 2.8rem;
+  }
+
+  .cover_us p {
+    font-size: 2.4rem;
+    margin-bottom: 6em;
+  }
+
+  .aspects h2 {
+    font-size: 2.8rem;
+  }
+
+  .aspect {
+    margin-bottom: 4em;
+  }
+  .image_container {
+    min-width: 60px;
+    height: 92px;
+  }
+
+  .persona h3 {
+    margin-left: 15px;
+    font-size: 2rem;
+  }
+
+  .aspect p {
+    font-size: 2.2rem;
+    width: 90%;
+  }
+
+  .aspects button {
+    font-size: 2.2rem;
+  }
+
+  .image_logo {
+    width: 10em;
+    height: 6.2em;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    /* aspect ratio is 1.65*/
+  }
+}

@@ -1,0 +1,122 @@
+.getintouch_section {
+  background-color: #d7ffc2;
+  width: 100%;
+}
+
+.getintouch_section_container {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.getintouch_section_container h2 {
+  color: #004449;
+  /* font-family: Avenir Next; */
+  font-size: 2.4em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.96px;
+  margin-bottom: 0.8em;
+}
+
+.getintouch_section_container p {
+  color: #000;
+  text-align: center;
+  /* font-family: Avenir Next; */
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.24px;
+  margin-bottom: 2em;
+}
+
+.getintouch_section_container button {
+  border: none;
+  border-radius: 4em;
+  background: #004449;
+  outline: none;
+  padding: 0.5em 1.8em;
+  color: #fff;
+  text-align: center;
+  /* font-family: Avenir Next; */
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.getintouch_section_container button:hover {
+  background: #7ab92d;
+}
+
+/* IPAD */
+@media only screen and (min-width: 768px) {
+  .getintouch_section_container {
+    padding: 7.5em 5em;
+  }
+
+  .getintouch_section_container h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .getintouch_section_container p {
+    font-size: 1.6em;
+  }
+
+  .getintouch_section_container p,
+  .mission_section p {
+    width: 90%;
+  }
+
+  .getintouch_section_container button {
+    font-size: 1.6em;
+  }
+}
+
+/** LARGE TABLET */
+@media only screen and (min-width: 1024px) {
+  .getintouch_section_container {
+    padding: 10em 5em;
+  }
+
+  .getintouch_section_container h2 {
+    font-size: 2.8em;
+  }
+
+  .getintouch_section_container p {
+    font-size: 1.8em;
+  }
+
+  .getintouch_section_container button {
+    font-size: 1.8em;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .getintouch_section_container {
+    padding: 10em 5em;
+  }
+
+  .getintouch_section_container h2 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .getintouch_section_container p {
+    font-size: 2.2em;
+    line-height: 180%;
+    width: 70%;
+  }
+
+  .getintouch_section_container button {
+    font-size: 2.2em;
+  }
+}
